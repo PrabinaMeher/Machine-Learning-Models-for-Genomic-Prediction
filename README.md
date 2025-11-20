@@ -78,9 +78,3 @@ When the script is executed, it performs 5-fold cross-validation (5 repetitions 
 - Root Mean Square Error (RMSE)
 - Mean Absolute Percentage Error (MAPE)
 - Correlation values
-
-### User can compute the average of the 5-fold values for each evaluation metric from the csv files by running following command in the Linux shell
-
-    awk '{a+=$1} {b+=$2} {c+=$3} {d+=$4} END {printf "%.3f\t%.3f\t%.3f\t%.3f\n", a/5, b/5, c/5, d/5}' iteration_1.csv
-   
-NOTE:- User can setup parameters for cross validation according to there requirement by changing the number of n_splits for number of folds and n_repeats for number of iterations in the script. By default number of n_splits and n_repeats is 5.
