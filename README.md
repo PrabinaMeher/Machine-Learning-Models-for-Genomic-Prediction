@@ -350,7 +350,7 @@ The exact output files and locations depend on the selected validation strategy 
 
 # Example Workflows
 
-## Example 1 — LOEO with SVM
+## Example 1 - LOEO with SVM
 
 ### Step 1: Generate LOEO splits
 
@@ -368,7 +368,7 @@ The model will train using the available environments and evaluate predictions o
 
 ---
 
-## Example 2 — LOEO with MLP
+## Example 2 - LOEO with MLP
 
 ### Step 1: Generate LOEO splits
 
