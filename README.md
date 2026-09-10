@@ -104,7 +104,7 @@ After the required split files have been generated, run the corresponding Machin
 
 ---
 
-# Step 1 — Generate Data Splits
+# Step 1 - Generate Data Splits
 
 ## Random Repeated Cross-Validation
 
@@ -148,7 +148,7 @@ After generating the splits, run the desired ML or DL model.
 
 ---
 
-# Step 2 — Run Machine Learning Models
+# Step 2 - Run Machine Learning Models
 
 After generating the appropriate data splits, select the ML model corresponding to the validation strategy.
 
@@ -386,7 +386,7 @@ The MLP model will use the generated LOEO splits for training and evaluation.
 
 ---
 
-## Example 3 — Random Repeated Cross-Validation with XGBoost
+## Example 3 - Random Repeated Cross-Validation with XGBoost
 
 ### Step 1: Generate random repeated splits
 
@@ -402,7 +402,7 @@ python Random_repeated_cv/ML/XGBoost_model.py
 
 ---
 
-## Example 4 — Cross-Environment Validation with MLP
+## Example 4 - Cross-Environment Validation with MLP
 
 ### Step 1: Generate cross-environment splits
 
@@ -434,12 +434,3 @@ The recommended computational environment is **Python 3.12.2** with the package 
 
 ---
 
-# Important Notes
-
-* **Always generate the required data splits before running ML or DL models.**
-* Select the splitting strategy according to the desired validation design.
-* Use the corresponding ML/DL scripts for the generated splits.
-* Ensure that the input and output paths in the scripts are correctly configured.
-* The test data/environment should not be used for hyperparameter optimization.
-* Different models may require different preprocessing and input formats.
-* The generated results depend on the dataset, split strategy, model, and parameter settings.
