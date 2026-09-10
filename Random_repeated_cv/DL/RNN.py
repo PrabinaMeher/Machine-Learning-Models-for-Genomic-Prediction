@@ -230,12 +230,8 @@ def validate_inner_splits(
 
 
 def reshape_for_rnn(X_2d):
-    """
-    (samples, features) ->
-    (samples, timesteps=1, features)
-    """
     return X_2d.reshape(
-        (X_2d.shape[0], 1, X_2d.shape[1])
+        (X_2d.shape[0], X_2d.shape[1], 1)
     )
 
 
@@ -518,7 +514,7 @@ def make_inner_objective(
 
             model = create_rnn_model(
                 trial,
-                input_shape=(1, N_FEATURES)
+                input_shape=( N_FEATURES, 1)
             )
 
             model.fit(
@@ -746,7 +742,7 @@ for repetition in range(
 
             final_model = create_rnn_model_from_params(
                 best_params,
-                input_shape=(1, N_FEATURES)
+                input_shape=( N_FEATURES, 1)
             )
 
             final_model.fit(
