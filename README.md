@@ -328,7 +328,8 @@ The optimization may include parameters such as:
 For LOEO models using hyperparameter optimization, an inner **5-fold cross-validation** is performed only on the training data.
 The left-out environment is reserved for final evaluation.
 
-*The selected hyperparameter configurations that achieved the highest PCC for a particular Dataset & Model in our analysis are uploaded in supplementary folder.* 
+The selected hyperparameter configurations that achieved the highest PCC for a particular Dataset & Model in our analysis are uploaded in supplementary folder.
+
 ---
 
 # Model Training and Evaluation
